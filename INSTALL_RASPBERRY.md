@@ -25,7 +25,7 @@
    - Set up a Python virtual environment
    - Install Python packages
    - Configure USB permissions for the Zigbee adapter
-   - Create and enable a systemd service
+   - Create and enable systemd services
 
 3. Reboot your Raspberry Pi:
    ```bash
@@ -34,8 +34,42 @@
 
 4. After reboot, check the service status:
    ```bash
-   sudo systemctl status zigbee-manager
+   sudo systemctl status zigbee-manager-headless
    ```
+
+## Operating Modes
+
+### Headless Mode (Default)
+- Runs without GUI, suitable for running as a service
+- Enabled by default during installation
+- All operations can be monitored through logs
+
+To manage the headless service:
+```bash
+# Start the service
+sudo systemctl start zigbee-manager-headless
+
+# Check status
+sudo systemctl status zigbee-manager-headless
+
+# View logs
+journalctl -u zigbee-manager-headless -f
+```
+
+### GUI Mode
+- Provides a graphical interface for management
+- Requires X11 display access
+
+To switch to GUI mode:
+```bash
+# Disable headless service
+sudo systemctl disable zigbee-manager-headless
+sudo systemctl stop zigbee-manager-headless
+
+# Enable and start GUI service
+sudo systemctl enable zigbee-manager-gui
+sudo systemctl start zigbee-manager-gui
+```
 
 ## Configuration
 
@@ -62,15 +96,6 @@
    }
    ```
 
-## Usage
-
-1. The application will start automatically on boot
-2. Access the UI by logging into your Raspberry Pi desktop
-3. Monitor logs in real-time:
-   ```bash
-   journalctl -u zigbee-manager -f
-   ```
-
 ## Troubleshooting
 
 1. If the Zigbee adapter is not detected:
@@ -89,14 +114,21 @@
      tail -f logs/mqtt.log
      ```
 
-3. For other issues:
+3. For X11 display issues in GUI mode:
+   - Ensure X11 is running and DISPLAY is set correctly
+   - Check the Xauthority file permissions
+   - Consider using headless mode if GUI is not required
+
+4. For other issues:
    - Check the application logs:
      ```bash
      tail -f logs/zigbee_manager.log
      ```
-   - Restart the service:
+   - Restart the appropriate service:
      ```bash
-     sudo systemctl restart zigbee-manager
+     sudo systemctl restart zigbee-manager-headless
+     # or
+     sudo systemctl restart zigbee-manager-gui
      ```
 
 ## Support
