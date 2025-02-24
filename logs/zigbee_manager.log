@@ -343,3 +343,23 @@ Function: on_connect
 Path: /home/runner/workspace/mqtt_client.py:82
 Function: connect
 
+2025-02-24 19:16:24,589 - __main__ - INFO - Starting Zigbee Manager application
+Path: /home/runner/workspace/main.py:32
+Function: main
+
+2025-02-24 19:16:24,591 - __main__ - INFO - Web server started on port 5000
+Path: /home/runner/workspace/main.py:38
+Function: main
+
+2025-02-24 19:16:24,592 - asyncio - DEBUG - Using selector: EpollSelector
+Path: /nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py:54
+Function: __init__
+
+2025-02-24 19:16:24,593 - device_converters - INFO - Loaded device definition for TS0001
+Path: /home/runner/workspace/device_converters.py:27
+Function: load_definitions
+
+2025-02-24 19:16:24,868 - __main__ - INFO - Starting GUI mode
+Path: /home/runner/workspace/main.py:57
+Function: main
+

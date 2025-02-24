@@ -10,7 +10,15 @@ def setup_logger():
 
     # Create formatters
     console_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    file_formatter = logging.Formatter(
+
+    # Use a custom formatter class to handle missing extra_data
+    class ExtraFormatter(logging.Formatter):
+        def format(self, record):
+            if not hasattr(record, 'extra_data'):
+                record.extra_data = ''
+            return super().format(record)
+
+    file_formatter = ExtraFormatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s\n'
         'Path: %(pathname)s:%(lineno)d\n'
         'Function: %(funcName)s\n'

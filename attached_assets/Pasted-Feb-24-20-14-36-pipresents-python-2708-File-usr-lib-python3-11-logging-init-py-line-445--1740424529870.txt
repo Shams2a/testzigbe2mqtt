@@ -1,0 +1,1048 @@
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:36 pipresents python[2708]:     return self._fmt % values
+Feb 24 20:14:36 pipresents python[2708]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:36 pipresents python[2708]: KeyError: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:36 pipresents python[2708]:     if self.shouldRollover(record):
+Feb 24 20:14:36 pipresents python[2708]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:36 pipresents python[2708]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:36 pipresents python[2708]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:36 pipresents python[2708]:     return fmt.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:36 pipresents python[2708]:     s = self.formatMessage(record)
+Feb 24 20:14:36 pipresents python[2708]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:36 pipresents python[2708]:     return self._style.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:36 pipresents python[2708]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:36 pipresents python[2708]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: Call stack:
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:36 pipresents python[2708]:     main()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 38, in main
+Feb 24 20:14:36 pipresents python[2708]:     logger.info("Web server started on port 5000",
+Feb 24 20:14:36 pipresents python[2708]: Message: 'Web server started on port 5000'
+Feb 24 20:14:36 pipresents python[2708]: Arguments: ()
+Feb 24 20:14:36 pipresents python[2708]: --- Logging error ---
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:36 pipresents python[2708]:     return self._format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:36 pipresents python[2708]:     return self._fmt % values
+Feb 24 20:14:36 pipresents python[2708]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:36 pipresents python[2708]: KeyError: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:36 pipresents python[2708]:     if self.shouldRollover(record):
+Feb 24 20:14:36 pipresents python[2708]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:36 pipresents python[2708]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:36 pipresents python[2708]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:36 pipresents python[2708]:     return fmt.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:36 pipresents python[2708]:     s = self.formatMessage(record)
+Feb 24 20:14:36 pipresents python[2708]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:36 pipresents python[2708]:     return self._style.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:36 pipresents python[2708]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:36 pipresents python[2708]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: Call stack:
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:36 pipresents python[2708]:     main()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:36 pipresents python[2708]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 25, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     self.loop = asyncio.get_event_loop()
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/asyncio/events.py", line 674, in get_event_loop
+Feb 24 20:14:36 pipresents python[2708]:     self.set_event_loop(self.new_event_loop())
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/asyncio/events.py", line 695, in new_event_loop
+Feb 24 20:14:36 pipresents python[2708]:     return self._loop_factory()
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/asyncio/unix_events.py", line 64, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     super().__init__(selector)
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/asyncio/selector_events.py", line 54, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     logger.debug('Using selector: %s', selector.__class__.__name__)
+Feb 24 20:14:36 pipresents python[2708]: Message: 'Using selector: %s'
+Feb 24 20:14:36 pipresents python[2708]: Arguments: ('EpollSelector',)
+Feb 24 20:14:36 pipresents python[2708]: 2025-02-24 20:14:36,830 - device_converters - INFO - Loaded device definition for TS0001
+Feb 24 20:14:36 pipresents python[2708]: --- Logging error ---
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:36 pipresents python[2708]:     return self._format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:36 pipresents python[2708]:     return self._fmt % values
+Feb 24 20:14:36 pipresents python[2708]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:36 pipresents python[2708]: KeyError: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:36 pipresents python[2708]:     if self.shouldRollover(record):
+Feb 24 20:14:36 pipresents python[2708]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:36 pipresents python[2708]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:36 pipresents python[2708]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:36 pipresents python[2708]:     return fmt.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:36 pipresents python[2708]:     s = self.formatMessage(record)
+Feb 24 20:14:36 pipresents python[2708]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:36 pipresents python[2708]:     return self._style.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:36 pipresents python[2708]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:36 pipresents python[2708]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: Call stack:
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:36 pipresents python[2708]:     main()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:36 pipresents python[2708]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 26, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     self.converters = DeviceConverters()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 10, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     self.load_definitions()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 27, in load_definitions
+Feb 24 20:14:36 pipresents python[2708]:     self.logger.info(f"Loaded device definition for {model_id}")
+Feb 24 20:14:36 pipresents python[2708]: Message: 'Loaded device definition for TS0001'
+Feb 24 20:14:36 pipresents python[2708]: Arguments: ()
+Feb 24 20:14:36 pipresents python[2708]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:36 pipresents python[2708]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:36 pipresents python[2708]: 2025-02-24 20:14:36,837 - __main__ - ERROR - Application error: couldn't connect to display ":0"
+Feb 24 20:14:36 pipresents python[2708]: --- Logging error ---
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 54, in main
+Feb 24 20:14:36 pipresents python[2708]:     root = tk.Tk()
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+Feb 24 20:14:36 pipresents python[2708]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+Feb 24 20:14:36 pipresents python[2708]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]: _tkinter.TclError: couldn't connect to display ":0"
+Feb 24 20:14:36 pipresents python[2708]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:36 pipresents python[2708]:     return self._format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:36 pipresents python[2708]:     return self._fmt % values
+Feb 24 20:14:36 pipresents python[2708]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:36 pipresents python[2708]: KeyError: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:36 pipresents python[2708]: Traceback (most recent call last):
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:36 pipresents python[2708]:     if self.shouldRollover(record):
+Feb 24 20:14:36 pipresents python[2708]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:36 pipresents python[2708]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:36 pipresents python[2708]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:36 pipresents python[2708]:     return fmt.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:36 pipresents python[2708]:     s = self.formatMessage(record)
+Feb 24 20:14:36 pipresents python[2708]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:36 pipresents python[2708]:     return self._style.format(record)
+Feb 24 20:14:36 pipresents python[2708]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:36 pipresents python[2708]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:36 pipresents python[2708]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:36 pipresents python[2708]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:36 pipresents python[2708]: Call stack:
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:36 pipresents python[2708]:     main()
+Feb 24 20:14:36 pipresents python[2708]:   File "/home/shams/testzigbe2mqtt/main.py", line 82, in main
+Feb 24 20:14:36 pipresents python[2708]:     logger.error(f"Application error: {str(e)}",
+Feb 24 20:14:36 pipresents python[2708]: Message: 'Application error: couldn\'t connect to display ":0"'
+Feb 24 20:14:36 pipresents python[2708]: Arguments: ()
+Feb 24 20:14:36 pipresents python[2708]: 2025-02-24 20:14:36,842 - zigbee_manager - INFO - Zigbee manager stopped successfully
+Feb 24 20:14:36 pipresents python[2708]: 2025-02-24 20:14:36,842 - mqtt_client - INFO - Disconnected from MQTT broker
+Feb 24 20:14:37 pipresents systemd[1]: zigbee-manager.service: Deactivated successfully.
+Feb 24 20:14:37 pipresents systemd[1]: zigbee-manager.service: Consumed 1.805s CPU time.
+Feb 24 20:14:42 pipresents systemd[1]: zigbee-manager.service: Scheduled restart job, restart counter is at 238.
+Feb 24 20:14:42 pipresents systemd[1]: Stopped zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:42 pipresents systemd[1]: zigbee-manager.service: Consumed 1.805s CPU time.
+Feb 24 20:14:42 pipresents systemd[1]: Started zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,805 - __main__ - INFO - Starting Zigbee Manager application
+Feb 24 20:14:43 pipresents python[2713]: --- Logging error ---
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:43 pipresents python[2713]:     return self._format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:43 pipresents python[2713]:     return self._fmt % values
+Feb 24 20:14:43 pipresents python[2713]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:43 pipresents python[2713]: KeyError: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:43 pipresents python[2713]:     if self.shouldRollover(record):
+Feb 24 20:14:43 pipresents python[2713]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:43 pipresents python[2713]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:43 pipresents python[2713]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:43 pipresents python[2713]:     return fmt.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:43 pipresents python[2713]:     s = self.formatMessage(record)
+Feb 24 20:14:43 pipresents python[2713]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:43 pipresents python[2713]:     return self._style.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:43 pipresents python[2713]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:43 pipresents python[2713]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: Call stack:
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:43 pipresents python[2713]:     main()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 32, in main
+Feb 24 20:14:43 pipresents python[2713]:     logger.info("Starting Zigbee Manager application",
+Feb 24 20:14:43 pipresents python[2713]: Message: 'Starting Zigbee Manager application'
+Feb 24 20:14:43 pipresents python[2713]: Arguments: ()
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,810 - __main__ - INFO - Web server started on port 5000
+Feb 24 20:14:43 pipresents python[2713]: --- Logging error ---
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:43 pipresents python[2713]:     return self._format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:43 pipresents python[2713]:     return self._fmt % values
+Feb 24 20:14:43 pipresents python[2713]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:43 pipresents python[2713]: KeyError: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:43 pipresents python[2713]:     if self.shouldRollover(record):
+Feb 24 20:14:43 pipresents python[2713]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:43 pipresents python[2713]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:43 pipresents python[2713]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:43 pipresents python[2713]:     return fmt.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:43 pipresents python[2713]:     s = self.formatMessage(record)
+Feb 24 20:14:43 pipresents python[2713]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:43 pipresents python[2713]:     return self._style.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:43 pipresents python[2713]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:43 pipresents python[2713]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: Call stack:
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:43 pipresents python[2713]:     main()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 38, in main
+Feb 24 20:14:43 pipresents python[2713]:     logger.info("Web server started on port 5000",
+Feb 24 20:14:43 pipresents python[2713]: Message: 'Web server started on port 5000'
+Feb 24 20:14:43 pipresents python[2713]: Arguments: ()
+Feb 24 20:14:43 pipresents python[2713]: --- Logging error ---
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:43 pipresents python[2713]:     return self._format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:43 pipresents python[2713]:     return self._fmt % values
+Feb 24 20:14:43 pipresents python[2713]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:43 pipresents python[2713]: KeyError: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:43 pipresents python[2713]:     if self.shouldRollover(record):
+Feb 24 20:14:43 pipresents python[2713]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:43 pipresents python[2713]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:43 pipresents python[2713]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:43 pipresents python[2713]:     return fmt.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:43 pipresents python[2713]:     s = self.formatMessage(record)
+Feb 24 20:14:43 pipresents python[2713]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:43 pipresents python[2713]:     return self._style.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:43 pipresents python[2713]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:43 pipresents python[2713]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: Call stack:
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:43 pipresents python[2713]:     main()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:43 pipresents python[2713]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 25, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     self.loop = asyncio.get_event_loop()
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/asyncio/events.py", line 674, in get_event_loop
+Feb 24 20:14:43 pipresents python[2713]:     self.set_event_loop(self.new_event_loop())
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/asyncio/events.py", line 695, in new_event_loop
+Feb 24 20:14:43 pipresents python[2713]:     return self._loop_factory()
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/asyncio/unix_events.py", line 64, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     super().__init__(selector)
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/asyncio/selector_events.py", line 54, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     logger.debug('Using selector: %s', selector.__class__.__name__)
+Feb 24 20:14:43 pipresents python[2713]: Message: 'Using selector: %s'
+Feb 24 20:14:43 pipresents python[2713]: Arguments: ('EpollSelector',)
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,820 - device_converters - INFO - Loaded device definition for TS0001
+Feb 24 20:14:43 pipresents python[2713]: --- Logging error ---
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:43 pipresents python[2713]:     return self._format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:43 pipresents python[2713]:     return self._fmt % values
+Feb 24 20:14:43 pipresents python[2713]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:43 pipresents python[2713]: KeyError: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:43 pipresents python[2713]:     if self.shouldRollover(record):
+Feb 24 20:14:43 pipresents python[2713]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:43 pipresents python[2713]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:43 pipresents python[2713]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:43 pipresents python[2713]:     return fmt.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:43 pipresents python[2713]:     s = self.formatMessage(record)
+Feb 24 20:14:43 pipresents python[2713]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:43 pipresents python[2713]:     return self._style.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:43 pipresents python[2713]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:43 pipresents python[2713]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: Call stack:
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:43 pipresents python[2713]:     main()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:43 pipresents python[2713]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 26, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     self.converters = DeviceConverters()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 10, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     self.load_definitions()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 27, in load_definitions
+Feb 24 20:14:43 pipresents python[2713]:     self.logger.info(f"Loaded device definition for {model_id}")
+Feb 24 20:14:43 pipresents python[2713]: Message: 'Loaded device definition for TS0001'
+Feb 24 20:14:43 pipresents python[2713]: Arguments: ()
+Feb 24 20:14:43 pipresents python[2713]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:43 pipresents python[2713]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,828 - __main__ - ERROR - Application error: couldn't connect to display ":0"
+Feb 24 20:14:43 pipresents python[2713]: --- Logging error ---
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 54, in main
+Feb 24 20:14:43 pipresents python[2713]:     root = tk.Tk()
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+Feb 24 20:14:43 pipresents python[2713]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+Feb 24 20:14:43 pipresents python[2713]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]: _tkinter.TclError: couldn't connect to display ":0"
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:43 pipresents python[2713]:     return self._format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:43 pipresents python[2713]:     return self._fmt % values
+Feb 24 20:14:43 pipresents python[2713]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:43 pipresents python[2713]: KeyError: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:43 pipresents python[2713]: Traceback (most recent call last):
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:43 pipresents python[2713]:     if self.shouldRollover(record):
+Feb 24 20:14:43 pipresents python[2713]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:43 pipresents python[2713]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:43 pipresents python[2713]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:43 pipresents python[2713]:     return fmt.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:43 pipresents python[2713]:     s = self.formatMessage(record)
+Feb 24 20:14:43 pipresents python[2713]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:43 pipresents python[2713]:     return self._style.format(record)
+Feb 24 20:14:43 pipresents python[2713]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:43 pipresents python[2713]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:43 pipresents python[2713]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:43 pipresents python[2713]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:43 pipresents python[2713]: Call stack:
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:43 pipresents python[2713]:     main()
+Feb 24 20:14:43 pipresents python[2713]:   File "/home/shams/testzigbe2mqtt/main.py", line 82, in main
+Feb 24 20:14:43 pipresents python[2713]:     logger.error(f"Application error: {str(e)}",
+Feb 24 20:14:43 pipresents python[2713]: Message: 'Application error: couldn\'t connect to display ":0"'
+Feb 24 20:14:43 pipresents python[2713]: Arguments: ()
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,832 - zigbee_manager - INFO - Zigbee manager stopped successfully
+Feb 24 20:14:43 pipresents python[2713]: 2025-02-24 20:14:43,833 - mqtt_client - INFO - Disconnected from MQTT broker
+Feb 24 20:14:44 pipresents systemd[1]: zigbee-manager.service: Deactivated successfully.
+Feb 24 20:14:44 pipresents systemd[1]: zigbee-manager.service: Consumed 1.802s CPU time.
+Feb 24 20:14:49 pipresents systemd[1]: zigbee-manager.service: Scheduled restart job, restart counter is at 239.
+Feb 24 20:14:49 pipresents systemd[1]: Stopped zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:49 pipresents systemd[1]: zigbee-manager.service: Consumed 1.802s CPU time.
+Feb 24 20:14:49 pipresents systemd[1]: Started zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,838 - __main__ - INFO - Starting Zigbee Manager application
+Feb 24 20:14:50 pipresents python[2717]: --- Logging error ---
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:50 pipresents python[2717]:     return self._format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:50 pipresents python[2717]:     return self._fmt % values
+Feb 24 20:14:50 pipresents python[2717]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:50 pipresents python[2717]: KeyError: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:50 pipresents python[2717]:     if self.shouldRollover(record):
+Feb 24 20:14:50 pipresents python[2717]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:50 pipresents python[2717]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:50 pipresents python[2717]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:50 pipresents python[2717]:     return fmt.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:50 pipresents python[2717]:     s = self.formatMessage(record)
+Feb 24 20:14:50 pipresents python[2717]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:50 pipresents python[2717]:     return self._style.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:50 pipresents python[2717]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:50 pipresents python[2717]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: Call stack:
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:50 pipresents python[2717]:     main()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 32, in main
+Feb 24 20:14:50 pipresents python[2717]:     logger.info("Starting Zigbee Manager application",
+Feb 24 20:14:50 pipresents python[2717]: Message: 'Starting Zigbee Manager application'
+Feb 24 20:14:50 pipresents python[2717]: Arguments: ()
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,847 - __main__ - INFO - Web server started on port 5000
+Feb 24 20:14:50 pipresents python[2717]: --- Logging error ---
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:50 pipresents python[2717]:     return self._format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:50 pipresents python[2717]:     return self._fmt % values
+Feb 24 20:14:50 pipresents python[2717]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:50 pipresents python[2717]: KeyError: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:50 pipresents python[2717]:     if self.shouldRollover(record):
+Feb 24 20:14:50 pipresents python[2717]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:50 pipresents python[2717]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:50 pipresents python[2717]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:50 pipresents python[2717]:     return fmt.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:50 pipresents python[2717]:     s = self.formatMessage(record)
+Feb 24 20:14:50 pipresents python[2717]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:50 pipresents python[2717]:     return self._style.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:50 pipresents python[2717]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:50 pipresents python[2717]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: Call stack:
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:50 pipresents python[2717]:     main()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 38, in main
+Feb 24 20:14:50 pipresents python[2717]:     logger.info("Web server started on port 5000",
+Feb 24 20:14:50 pipresents python[2717]: Message: 'Web server started on port 5000'
+Feb 24 20:14:50 pipresents python[2717]: Arguments: ()
+Feb 24 20:14:50 pipresents python[2717]: --- Logging error ---
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:50 pipresents python[2717]:     return self._format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:50 pipresents python[2717]:     return self._fmt % values
+Feb 24 20:14:50 pipresents python[2717]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:50 pipresents python[2717]: KeyError: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:50 pipresents python[2717]:     if self.shouldRollover(record):
+Feb 24 20:14:50 pipresents python[2717]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:50 pipresents python[2717]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:50 pipresents python[2717]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:50 pipresents python[2717]:     return fmt.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:50 pipresents python[2717]:     s = self.formatMessage(record)
+Feb 24 20:14:50 pipresents python[2717]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:50 pipresents python[2717]:     return self._style.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:50 pipresents python[2717]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:50 pipresents python[2717]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: Call stack:
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:50 pipresents python[2717]:     main()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:50 pipresents python[2717]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 25, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     self.loop = asyncio.get_event_loop()
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/asyncio/events.py", line 674, in get_event_loop
+Feb 24 20:14:50 pipresents python[2717]:     self.set_event_loop(self.new_event_loop())
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/asyncio/events.py", line 695, in new_event_loop
+Feb 24 20:14:50 pipresents python[2717]:     return self._loop_factory()
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/asyncio/unix_events.py", line 64, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     super().__init__(selector)
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/asyncio/selector_events.py", line 54, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     logger.debug('Using selector: %s', selector.__class__.__name__)
+Feb 24 20:14:50 pipresents python[2717]: Message: 'Using selector: %s'
+Feb 24 20:14:50 pipresents python[2717]: Arguments: ('EpollSelector',)
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,855 - device_converters - INFO - Loaded device definition for TS0001
+Feb 24 20:14:50 pipresents python[2717]: --- Logging error ---
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:50 pipresents python[2717]:     return self._format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:50 pipresents python[2717]:     return self._fmt % values
+Feb 24 20:14:50 pipresents python[2717]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:50 pipresents python[2717]: KeyError: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:50 pipresents python[2717]:     if self.shouldRollover(record):
+Feb 24 20:14:50 pipresents python[2717]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:50 pipresents python[2717]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:50 pipresents python[2717]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:50 pipresents python[2717]:     return fmt.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:50 pipresents python[2717]:     s = self.formatMessage(record)
+Feb 24 20:14:50 pipresents python[2717]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:50 pipresents python[2717]:     return self._style.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:50 pipresents python[2717]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:50 pipresents python[2717]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: Call stack:
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:50 pipresents python[2717]:     main()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:50 pipresents python[2717]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 26, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     self.converters = DeviceConverters()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 10, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     self.load_definitions()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 27, in load_definitions
+Feb 24 20:14:50 pipresents python[2717]:     self.logger.info(f"Loaded device definition for {model_id}")
+Feb 24 20:14:50 pipresents python[2717]: Message: 'Loaded device definition for TS0001'
+Feb 24 20:14:50 pipresents python[2717]: Arguments: ()
+Feb 24 20:14:50 pipresents python[2717]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:50 pipresents python[2717]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,862 - __main__ - ERROR - Application error: couldn't connect to display ":0"
+Feb 24 20:14:50 pipresents python[2717]: --- Logging error ---
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 54, in main
+Feb 24 20:14:50 pipresents python[2717]:     root = tk.Tk()
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+Feb 24 20:14:50 pipresents python[2717]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+Feb 24 20:14:50 pipresents python[2717]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]: _tkinter.TclError: couldn't connect to display ":0"
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:50 pipresents python[2717]:     return self._format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:50 pipresents python[2717]:     return self._fmt % values
+Feb 24 20:14:50 pipresents python[2717]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:50 pipresents python[2717]: KeyError: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:50 pipresents python[2717]: Traceback (most recent call last):
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:50 pipresents python[2717]:     if self.shouldRollover(record):
+Feb 24 20:14:50 pipresents python[2717]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:50 pipresents python[2717]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:50 pipresents python[2717]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:50 pipresents python[2717]:     return fmt.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:50 pipresents python[2717]:     s = self.formatMessage(record)
+Feb 24 20:14:50 pipresents python[2717]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:50 pipresents python[2717]:     return self._style.format(record)
+Feb 24 20:14:50 pipresents python[2717]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:50 pipresents python[2717]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:50 pipresents python[2717]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:50 pipresents python[2717]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:50 pipresents python[2717]: Call stack:
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:50 pipresents python[2717]:     main()
+Feb 24 20:14:50 pipresents python[2717]:   File "/home/shams/testzigbe2mqtt/main.py", line 82, in main
+Feb 24 20:14:50 pipresents python[2717]:     logger.error(f"Application error: {str(e)}",
+Feb 24 20:14:50 pipresents python[2717]: Message: 'Application error: couldn\'t connect to display ":0"'
+Feb 24 20:14:50 pipresents python[2717]: Arguments: ()
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,867 - zigbee_manager - INFO - Zigbee manager stopped successfully
+Feb 24 20:14:50 pipresents python[2717]: 2025-02-24 20:14:50,868 - mqtt_client - INFO - Disconnected from MQTT broker
+Feb 24 20:14:51 pipresents systemd[1]: zigbee-manager.service: Deactivated successfully.
+Feb 24 20:14:51 pipresents systemd[1]: zigbee-manager.service: Consumed 1.831s CPU time.
+Feb 24 20:14:56 pipresents systemd[1]: zigbee-manager.service: Scheduled restart job, restart counter is at 240.
+Feb 24 20:14:56 pipresents systemd[1]: Stopped zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:56 pipresents systemd[1]: zigbee-manager.service: Consumed 1.831s CPU time.
+Feb 24 20:14:56 pipresents systemd[1]: Started zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,816 - __main__ - INFO - Starting Zigbee Manager application
+Feb 24 20:14:57 pipresents python[2721]: --- Logging error ---
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:57 pipresents python[2721]:     return self._format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:57 pipresents python[2721]:     return self._fmt % values
+Feb 24 20:14:57 pipresents python[2721]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:57 pipresents python[2721]: KeyError: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:57 pipresents python[2721]:     if self.shouldRollover(record):
+Feb 24 20:14:57 pipresents python[2721]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:57 pipresents python[2721]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:57 pipresents python[2721]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:57 pipresents python[2721]:     return fmt.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:57 pipresents python[2721]:     s = self.formatMessage(record)
+Feb 24 20:14:57 pipresents python[2721]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:57 pipresents python[2721]:     return self._style.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:57 pipresents python[2721]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:57 pipresents python[2721]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: Call stack:
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:57 pipresents python[2721]:     main()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 32, in main
+Feb 24 20:14:57 pipresents python[2721]:     logger.info("Starting Zigbee Manager application",
+Feb 24 20:14:57 pipresents python[2721]: Message: 'Starting Zigbee Manager application'
+Feb 24 20:14:57 pipresents python[2721]: Arguments: ()
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,821 - __main__ - INFO - Web server started on port 5000
+Feb 24 20:14:57 pipresents python[2721]: --- Logging error ---
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:57 pipresents python[2721]:     return self._format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:57 pipresents python[2721]:     return self._fmt % values
+Feb 24 20:14:57 pipresents python[2721]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:57 pipresents python[2721]: KeyError: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:57 pipresents python[2721]:     if self.shouldRollover(record):
+Feb 24 20:14:57 pipresents python[2721]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:57 pipresents python[2721]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:57 pipresents python[2721]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:57 pipresents python[2721]:     return fmt.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:57 pipresents python[2721]:     s = self.formatMessage(record)
+Feb 24 20:14:57 pipresents python[2721]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:57 pipresents python[2721]:     return self._style.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:57 pipresents python[2721]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:57 pipresents python[2721]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: Call stack:
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:57 pipresents python[2721]:     main()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 38, in main
+Feb 24 20:14:57 pipresents python[2721]:     logger.info("Web server started on port 5000",
+Feb 24 20:14:57 pipresents python[2721]: Message: 'Web server started on port 5000'
+Feb 24 20:14:57 pipresents python[2721]: Arguments: ()
+Feb 24 20:14:57 pipresents python[2721]: --- Logging error ---
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:57 pipresents python[2721]:     return self._format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:57 pipresents python[2721]:     return self._fmt % values
+Feb 24 20:14:57 pipresents python[2721]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:57 pipresents python[2721]: KeyError: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:57 pipresents python[2721]:     if self.shouldRollover(record):
+Feb 24 20:14:57 pipresents python[2721]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:57 pipresents python[2721]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:57 pipresents python[2721]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:57 pipresents python[2721]:     return fmt.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:57 pipresents python[2721]:     s = self.formatMessage(record)
+Feb 24 20:14:57 pipresents python[2721]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:57 pipresents python[2721]:     return self._style.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:57 pipresents python[2721]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:57 pipresents python[2721]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: Call stack:
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:57 pipresents python[2721]:     main()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:57 pipresents python[2721]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 25, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     self.loop = asyncio.get_event_loop()
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/asyncio/events.py", line 674, in get_event_loop
+Feb 24 20:14:57 pipresents python[2721]:     self.set_event_loop(self.new_event_loop())
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/asyncio/events.py", line 695, in new_event_loop
+Feb 24 20:14:57 pipresents python[2721]:     return self._loop_factory()
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/asyncio/unix_events.py", line 64, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     super().__init__(selector)
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/asyncio/selector_events.py", line 54, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     logger.debug('Using selector: %s', selector.__class__.__name__)
+Feb 24 20:14:57 pipresents python[2721]: Message: 'Using selector: %s'
+Feb 24 20:14:57 pipresents python[2721]: Arguments: ('EpollSelector',)
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,831 - device_converters - INFO - Loaded device definition for TS0001
+Feb 24 20:14:57 pipresents python[2721]: --- Logging error ---
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:57 pipresents python[2721]:     return self._format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:57 pipresents python[2721]:     return self._fmt % values
+Feb 24 20:14:57 pipresents python[2721]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:57 pipresents python[2721]: KeyError: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:57 pipresents python[2721]:     if self.shouldRollover(record):
+Feb 24 20:14:57 pipresents python[2721]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:57 pipresents python[2721]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:57 pipresents python[2721]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:57 pipresents python[2721]:     return fmt.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:57 pipresents python[2721]:     s = self.formatMessage(record)
+Feb 24 20:14:57 pipresents python[2721]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:57 pipresents python[2721]:     return self._style.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:57 pipresents python[2721]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:57 pipresents python[2721]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: Call stack:
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:57 pipresents python[2721]:     main()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:14:57 pipresents python[2721]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 26, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     self.converters = DeviceConverters()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 10, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     self.load_definitions()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 27, in load_definitions
+Feb 24 20:14:57 pipresents python[2721]:     self.logger.info(f"Loaded device definition for {model_id}")
+Feb 24 20:14:57 pipresents python[2721]: Message: 'Loaded device definition for TS0001'
+Feb 24 20:14:57 pipresents python[2721]: Arguments: ()
+Feb 24 20:14:57 pipresents python[2721]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:57 pipresents python[2721]: Authorization required, but no authorization protocol specified
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,839 - __main__ - ERROR - Application error: couldn't connect to display ":0"
+Feb 24 20:14:57 pipresents python[2721]: --- Logging error ---
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 54, in main
+Feb 24 20:14:57 pipresents python[2721]:     root = tk.Tk()
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+Feb 24 20:14:57 pipresents python[2721]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+Feb 24 20:14:57 pipresents python[2721]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]: _tkinter.TclError: couldn't connect to display ":0"
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:14:57 pipresents python[2721]:     return self._format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:14:57 pipresents python[2721]:     return self._fmt % values
+Feb 24 20:14:57 pipresents python[2721]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:14:57 pipresents python[2721]: KeyError: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: During handling of the above exception, another exception occurred:
+Feb 24 20:14:57 pipresents python[2721]: Traceback (most recent call last):
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:14:57 pipresents python[2721]:     if self.shouldRollover(record):
+Feb 24 20:14:57 pipresents python[2721]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:14:57 pipresents python[2721]:     msg = "%s\n" % self.format(record)
+Feb 24 20:14:57 pipresents python[2721]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:14:57 pipresents python[2721]:     return fmt.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:14:57 pipresents python[2721]:     s = self.formatMessage(record)
+Feb 24 20:14:57 pipresents python[2721]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:14:57 pipresents python[2721]:     return self._style.format(record)
+Feb 24 20:14:57 pipresents python[2721]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:14:57 pipresents python[2721]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:14:57 pipresents python[2721]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:14:57 pipresents python[2721]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:14:57 pipresents python[2721]: Call stack:
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:14:57 pipresents python[2721]:     main()
+Feb 24 20:14:57 pipresents python[2721]:   File "/home/shams/testzigbe2mqtt/main.py", line 82, in main
+Feb 24 20:14:57 pipresents python[2721]:     logger.error(f"Application error: {str(e)}",
+Feb 24 20:14:57 pipresents python[2721]: Message: 'Application error: couldn\'t connect to display ":0"'
+Feb 24 20:14:57 pipresents python[2721]: Arguments: ()
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,844 - zigbee_manager - INFO - Zigbee manager stopped successfully
+Feb 24 20:14:57 pipresents python[2721]: 2025-02-24 20:14:57,844 - mqtt_client - INFO - Disconnected from MQTT broker
+Feb 24 20:14:58 pipresents systemd[1]: zigbee-manager.service: Deactivated successfully.
+Feb 24 20:14:58 pipresents systemd[1]: zigbee-manager.service: Consumed 1.806s CPU time.
+Feb 24 20:15:03 pipresents systemd[1]: zigbee-manager.service: Scheduled restart job, restart counter is at 241.
+Feb 24 20:15:03 pipresents systemd[1]: Stopped zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:15:03 pipresents systemd[1]: zigbee-manager.service: Consumed 1.806s CPU time.
+Feb 24 20:15:03 pipresents systemd[1]: Started zigbee-manager.service - Zigbee Manager Service.
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,808 - __main__ - INFO - Starting Zigbee Manager application
+Feb 24 20:15:04 pipresents python[2725]: --- Logging error ---
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:15:04 pipresents python[2725]:     return self._format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:15:04 pipresents python[2725]:     return self._fmt % values
+Feb 24 20:15:04 pipresents python[2725]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:15:04 pipresents python[2725]: KeyError: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:15:04 pipresents python[2725]:     if self.shouldRollover(record):
+Feb 24 20:15:04 pipresents python[2725]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:15:04 pipresents python[2725]:     msg = "%s\n" % self.format(record)
+Feb 24 20:15:04 pipresents python[2725]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:15:04 pipresents python[2725]:     return fmt.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:15:04 pipresents python[2725]:     s = self.formatMessage(record)
+Feb 24 20:15:04 pipresents python[2725]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:15:04 pipresents python[2725]:     return self._style.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:15:04 pipresents python[2725]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:15:04 pipresents python[2725]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: Call stack:
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:15:04 pipresents python[2725]:     main()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 32, in main
+Feb 24 20:15:04 pipresents python[2725]:     logger.info("Starting Zigbee Manager application",
+Feb 24 20:15:04 pipresents python[2725]: Message: 'Starting Zigbee Manager application'
+Feb 24 20:15:04 pipresents python[2725]: Arguments: ()
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,813 - __main__ - INFO - Web server started on port 5000
+Feb 24 20:15:04 pipresents python[2725]: --- Logging error ---
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:15:04 pipresents python[2725]:     return self._format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:15:04 pipresents python[2725]:     return self._fmt % values
+Feb 24 20:15:04 pipresents python[2725]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:15:04 pipresents python[2725]: KeyError: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:15:04 pipresents python[2725]:     if self.shouldRollover(record):
+Feb 24 20:15:04 pipresents python[2725]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:15:04 pipresents python[2725]:     msg = "%s\n" % self.format(record)
+Feb 24 20:15:04 pipresents python[2725]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:15:04 pipresents python[2725]:     return fmt.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:15:04 pipresents python[2725]:     s = self.formatMessage(record)
+Feb 24 20:15:04 pipresents python[2725]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:15:04 pipresents python[2725]:     return self._style.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:15:04 pipresents python[2725]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:15:04 pipresents python[2725]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: Call stack:
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:15:04 pipresents python[2725]:     main()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 38, in main
+Feb 24 20:15:04 pipresents python[2725]:     logger.info("Web server started on port 5000",
+Feb 24 20:15:04 pipresents python[2725]: Message: 'Web server started on port 5000'
+Feb 24 20:15:04 pipresents python[2725]: Arguments: ()
+Feb 24 20:15:04 pipresents python[2725]: --- Logging error ---
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:15:04 pipresents python[2725]:     return self._format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:15:04 pipresents python[2725]:     return self._fmt % values
+Feb 24 20:15:04 pipresents python[2725]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:15:04 pipresents python[2725]: KeyError: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:15:04 pipresents python[2725]:     if self.shouldRollover(record):
+Feb 24 20:15:04 pipresents python[2725]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:15:04 pipresents python[2725]:     msg = "%s\n" % self.format(record)
+Feb 24 20:15:04 pipresents python[2725]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:15:04 pipresents python[2725]:     return fmt.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:15:04 pipresents python[2725]:     s = self.formatMessage(record)
+Feb 24 20:15:04 pipresents python[2725]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:15:04 pipresents python[2725]:     return self._style.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:15:04 pipresents python[2725]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:15:04 pipresents python[2725]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: Call stack:
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:15:04 pipresents python[2725]:     main()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:15:04 pipresents python[2725]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 25, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     self.loop = asyncio.get_event_loop()
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/asyncio/events.py", line 674, in get_event_loop
+Feb 24 20:15:04 pipresents python[2725]:     self.set_event_loop(self.new_event_loop())
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/asyncio/events.py", line 695, in new_event_loop
+Feb 24 20:15:04 pipresents python[2725]:     return self._loop_factory()
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/asyncio/unix_events.py", line 64, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     super().__init__(selector)
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/asyncio/selector_events.py", line 54, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     logger.debug('Using selector: %s', selector.__class__.__name__)
+Feb 24 20:15:04 pipresents python[2725]: Message: 'Using selector: %s'
+Feb 24 20:15:04 pipresents python[2725]: Arguments: ('EpollSelector',)
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,823 - device_converters - INFO - Loaded device definition for TS0001
+Feb 24 20:15:04 pipresents python[2725]: --- Logging error ---
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:15:04 pipresents python[2725]:     return self._format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:15:04 pipresents python[2725]:     return self._fmt % values
+Feb 24 20:15:04 pipresents python[2725]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:15:04 pipresents python[2725]: KeyError: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:15:04 pipresents python[2725]:     if self.shouldRollover(record):
+Feb 24 20:15:04 pipresents python[2725]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:15:04 pipresents python[2725]:     msg = "%s\n" % self.format(record)
+Feb 24 20:15:04 pipresents python[2725]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:15:04 pipresents python[2725]:     return fmt.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:15:04 pipresents python[2725]:     s = self.formatMessage(record)
+Feb 24 20:15:04 pipresents python[2725]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:15:04 pipresents python[2725]:     return self._style.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:15:04 pipresents python[2725]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:15:04 pipresents python[2725]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: Call stack:
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:15:04 pipresents python[2725]:     main()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 48, in main
+Feb 24 20:15:04 pipresents python[2725]:     zigbee_manager = ZigbeeManager(mqtt_client, config_manager)
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/zigbee_manager.py", line 26, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     self.converters = DeviceConverters()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 10, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     self.load_definitions()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/device_converters.py", line 27, in load_definitions
+Feb 24 20:15:04 pipresents python[2725]:     self.logger.info(f"Loaded device definition for {model_id}")
+Feb 24 20:15:04 pipresents python[2725]: Message: 'Loaded device definition for TS0001'
+Feb 24 20:15:04 pipresents python[2725]: Arguments: ()
+Feb 24 20:15:04 pipresents python[2725]: Authorization required, but no authorization protocol specified
+Feb 24 20:15:04 pipresents python[2725]: Authorization required, but no authorization protocol specified
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,831 - __main__ - ERROR - Application error: couldn't connect to display ":0"
+Feb 24 20:15:04 pipresents python[2725]: --- Logging error ---
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 54, in main
+Feb 24 20:15:04 pipresents python[2725]:     root = tk.Tk()
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+Feb 24 20:15:04 pipresents python[2725]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+Feb 24 20:15:04 pipresents python[2725]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]: _tkinter.TclError: couldn't connect to display ":0"
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 449, in format
+Feb 24 20:15:04 pipresents python[2725]:     return self._format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 445, in _format
+Feb 24 20:15:04 pipresents python[2725]:     return self._fmt % values
+Feb 24 20:15:04 pipresents python[2725]:            ~~~~~~~~~~^~~~~~~~
+Feb 24 20:15:04 pipresents python[2725]: KeyError: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: During handling of the above exception, another exception occurred:
+Feb 24 20:15:04 pipresents python[2725]: Traceback (most recent call last):
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 73, in emit
+Feb 24 20:15:04 pipresents python[2725]:     if self.shouldRollover(record):
+Feb 24 20:15:04 pipresents python[2725]:        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/handlers.py", line 196, in shouldRollover
+Feb 24 20:15:04 pipresents python[2725]:     msg = "%s\n" % self.format(record)
+Feb 24 20:15:04 pipresents python[2725]:                    ^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+Feb 24 20:15:04 pipresents python[2725]:     return fmt.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 690, in format
+Feb 24 20:15:04 pipresents python[2725]:     s = self.formatMessage(record)
+Feb 24 20:15:04 pipresents python[2725]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 659, in formatMessage
+Feb 24 20:15:04 pipresents python[2725]:     return self._style.format(record)
+Feb 24 20:15:04 pipresents python[2725]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Feb 24 20:15:04 pipresents python[2725]:   File "/usr/lib/python3.11/logging/__init__.py", line 451, in format
+Feb 24 20:15:04 pipresents python[2725]:     raise ValueError('Formatting field not found in record: %s' % e)
+Feb 24 20:15:04 pipresents python[2725]: ValueError: Formatting field not found in record: 'extra_data'
+Feb 24 20:15:04 pipresents python[2725]: Call stack:
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 94, in <module>
+Feb 24 20:15:04 pipresents python[2725]:     main()
+Feb 24 20:15:04 pipresents python[2725]:   File "/home/shams/testzigbe2mqtt/main.py", line 82, in main
+Feb 24 20:15:04 pipresents python[2725]:     logger.error(f"Application error: {str(e)}",
+Feb 24 20:15:04 pipresents python[2725]: Message: 'Application error: couldn\'t connect to display ":0"'
+Feb 24 20:15:04 pipresents python[2725]: Arguments: ()
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,836 - zigbee_manager - INFO - Zigbee manager stopped successfully
+Feb 24 20:15:04 pipresents python[2725]: 2025-02-24 20:15:04,836 - mqtt_client - INFO - Disconnected from MQTT broker
+Feb 24 20:15:05 pipresents systemd[1]: zigbee-manager.service: Deactivated successfully.
+Feb 24 20:15:05 pipresents systemd[1]: zigbee-manager.service: Consumed 1.813s CPU time.
