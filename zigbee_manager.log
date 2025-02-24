@@ -1,0 +1,72 @@
+2025-02-24 14:45:22,100 - zigbee_manager - ERROR - Error enabling permit join: Zigbee manager is not connected
+2025-02-24 14:45:22,972 - zigbee_manager - ERROR - Error enabling permit join: Zigbee manager is not connected
+2025-02-24 14:52:52,197 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:52:53,570 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:52:55,839 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:53:00,081 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:53:08,325 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:53:24,568 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:53:56,828 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 14:58:45,463 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 14:59:05,062 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 14:59:39,416 - __main__ - INFO - Web server started on port 5000
+2025-02-24 14:59:39,417 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:02:41,026 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:02:42,264 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:02:44,530 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:02:48,769 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:02:57,022 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:03:13,269 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:03:28,513 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:04:31,371 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:04:31,372 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:05:36,560 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:05:48,803 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:06:03,072 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:06:21,313 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:06:55,316 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:07:39,322 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:08:57,376 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:09:30,532 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:09:30,534 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:10:17,787 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8000
+2025-02-24 15:10:28,037 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:10:39,283 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:10:51,582 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:11:05,866 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:11:24,127 - mqtt_client - INFO - Disconnected from MQTT broker
+2025-02-24 15:11:48,336 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:11:48,339 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:12:07,307 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8000
+2025-02-24 15:12:13,446 - mqtt_client - ERROR - Connection timeout
+2025-02-24 15:12:32,607 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8884
+2025-02-24 15:12:32,852 - mqtt_client - ERROR - Unexpected MQTT disconnection: 7
+2025-02-24 15:12:34,098 - mqtt_client - ERROR - Unexpected MQTT disconnection: 7
+2025-02-24 15:12:36,338 - mqtt_client - ERROR - Unexpected MQTT disconnection: 7
+2025-02-24 15:12:38,338 - mqtt_client - ERROR - Connection timeout
+2025-02-24 15:14:15,393 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:14:15,395 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:14:36,140 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8884
+2025-02-24 15:14:36,382 - mqtt_client - ERROR - Unexpected MQTT disconnection (code 7)
+2025-02-24 15:14:37,624 - mqtt_client - ERROR - Unexpected MQTT disconnection (code 7)
+2025-02-24 15:14:39,865 - mqtt_client - ERROR - Unexpected MQTT disconnection (code 7)
+2025-02-24 15:14:41,865 - mqtt_client - ERROR - Connection timeout after 5 seconds
+2025-02-24 15:14:41,865 - mqtt_client - ERROR - Failed to connect to MQTT broker: Connection timeout after 5 seconds
+2025-02-24 15:14:54,106 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:1883
+2025-02-24 15:14:55,232 - mqtt_client - INFO - Connected to MQTT broker
+2025-02-24 15:14:55,238 - mqtt_client - INFO - Successfully connected to MQTT broker
+2025-02-24 15:17:19,074 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:17:19,076 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:18:03,442 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8884
+2025-02-24 15:18:04,454 - mqtt_client - INFO - Connected to MQTT broker
+2025-02-24 15:18:04,513 - mqtt_client - INFO - Successfully connected to MQTT broker
+2025-02-24 15:21:33,291 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:21:33,292 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:21:47,989 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8884
+2025-02-24 15:21:49,061 - mqtt_client - INFO - Connected to MQTT broker
+2025-02-24 15:21:49,155 - mqtt_client - INFO - Successfully connected to MQTT broker
+2025-02-24 15:21:58,783 - __main__ - INFO - Web server started on port 5000
+2025-02-24 15:21:58,784 - device_converters - INFO - Loaded device definition for TS0001
+2025-02-24 15:22:39,860 - mqtt_client - INFO - Connecting to MQTT broker at broker.hivemq.com:8884
+2025-02-24 15:22:40,466 - mqtt_client - INFO - Connected to MQTT broker
+2025-02-24 15:22:40,529 - mqtt_client - INFO - Successfully connected to MQTT broker

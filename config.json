@@ -1,0 +1,13 @@
+{
+    "mqtt": {
+        "broker": "6f66b254393d4dea9f6ed5d169c03469.s1.eu.hivemq.cloud",
+        "port": 8884,
+        "username": "teste",
+        "password": "Shams2al"
+    },
+    "zigbee": {
+        "port": "/dev/ttyACM0",
+        "channel": 11,
+        "pan_id": "0x1a62"
+    }
+}

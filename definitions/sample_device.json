@@ -1,0 +1,29 @@
+{
+  "model_id": "TS0001",
+  "vendor": "TuYa",
+  "description": "Smart switch",
+  "supports": [
+    "on_off",
+    "brightness"
+  ],
+  "exposes": [
+    {
+      "type": "binary",
+      "name": "state",
+      "property": "state",
+      "access": 7,
+      "values": [
+        "ON",
+        "OFF"
+      ]
+    },
+    {
+      "type": "numeric",
+      "name": "brightness",
+      "property": "brightness",
+      "access": 7,
+      "value_min": 0,
+      "value_max": 254
+    }
+  ]
+}

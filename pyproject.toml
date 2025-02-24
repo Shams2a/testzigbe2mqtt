@@ -1,0 +1,12 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.11.12",
+    "asyncio>=3.4.3",
+    "paho-mqtt>=2.1.0",
+    "twilio>=9.4.6",
+    "zigpy>=0.76.1",
+]
